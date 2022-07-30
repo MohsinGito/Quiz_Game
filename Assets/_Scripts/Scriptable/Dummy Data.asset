@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f319a129b9c1d4276825a5d481fcba08, type: 3}
+  m_Name: Dummy Data
+  m_EditorClassIdentifier: 
+  coinsEarned: 5008
+  rewardCoins: 2
+  coinsForHint: 4
+  coinsForTimeUp: 5
+  coinsForTimeIncrement: 5
+  selectedCatagory: 1
+  gameLevels:
+  - levelCatagory: 0
+    timeDuration: 0
+    levelQuizWords: []
+  - levelCatagory: 1
+    timeDuration: 25
+    levelQuizWords:
+    - word: bird
+      hint: animal with two wings and two legs
+    - word: cat
+      hint: a small animal related to lions
+    - word: chicken
+      hint: kept for its eggs and meat
+    - word: cow
+      hint: kept on farms to produce milk and meat
+    - word: crocodile
+      hint: a large reptile that has a long body, thick skin, and a long, thin mouth
+        with sharp teeths, that lives in the water
+    - word: dog
+      hint: a fury animal with four legs, a pointed nose and a tail
+    - word: duck
+      hint: a bird that lives in or near the water and has webbed feets for swimming
+        and a large flat bill
+    - word: elephant
+      hint: it has a long nose called a trunk
+    - word: fish
+      hint: an animal that lives in water, and has fins for swimming and gills for
+        breathing
+    - word: frog
+      hint: a small animal with smooth skin, that lives on both land and water
+    - word: giraffe
+      hint: a mammal with a very long neck, long legs
+    - word: bat
+      hint: a small animal that flies at night
+    - word: kangaroo
+      hint: a large australian animal with a strong tail and back legs, that moves
+        by jumping
+    - word: lion
+      hint: a large powerfull animal of the cat family that hunts in group
+    - word: parrot
+      hint: a tropical bird with brightly colored feathers
+    - word: shark
+      hint: a large seafish with very sharp teeth and a pointed fin on its back
+    - word: octopus
+      hint: a sea creature with soft round body and eight long arms
+    - word: goat
+      hint: an animal with horns and a coat of hair, that lives wild in the mountain
+        areas
+    - word: hippo
+      hint: a very large, round mamal that has short legs with hooves and thick skin
+        with almost no hair.
+    - word: monkey
+      hint: an animal with a long tail, that climbs trees and lives in hot areas
+    - word: mouse
+      hint: a small animal that is covered with hair and has a long thin tail
+    - word: sheep
+      hint: an animal with thick coat, kept on farms for its meat
+    - word: spider
+      hint: a small creature with eight legs
+    - word: rabbit
+      hint: a small animal with soft fur, long ears and a short tail
+    - word: snake
+      hint: a reptile with a very long thin body with no legs
+  sfxOn: 1
+  musicOn: 1

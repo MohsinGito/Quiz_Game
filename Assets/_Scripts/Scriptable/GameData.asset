@@ -1,0 +1,347 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f319a129b9c1d4276825a5d481fcba08, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  testBuild: 1
+  totalTries: 5
+  coinsEarned: 5000
+  rewardCoins: 2
+  coinsForHint: 4
+  coinsForTimeUp: 4
+  coinsForTimeIncrement: 4
+  selectedCatagory: 3
+  gameLevels:
+  - levelCatagory: 0
+    timeDuration: 0
+    levelQuizWords: []
+  - levelCatagory: 1
+    timeDuration: 50
+    levelQuizWords:
+    - word: frog
+      hint: a small animal with smooth skin, that lives on both land and water
+    - word: bird
+      hint: animal with two wings and two legs
+    - word: hippo
+      hint: a very large, round mamal that has short legs with hooves and thick skin
+        with almost no hair.
+    - word: mouse
+      hint: a small animal that is covered with hair and has a long thin tail
+    - word: bat
+      hint: a small animal that flies at night
+    - word: kangaroo
+      hint: a large australian animal with a strong tail and back legs, that moves
+        by jumping
+    - word: parrot
+      hint: a tropical bird with brightly colored feathers
+    - word: rabbit
+      hint: a small animal with soft fur, long ears and a short tail
+    - word: fish
+      hint: an animal that lives in water, and has fins for swimming and gills for
+        breathing
+    - word: duck
+      hint: a bird that lives in or near the water and has webbed feets for swimming
+        and a large flat bill
+    - word: goat
+      hint: an animal with horns and a coat of hair, that lives wild in the mountain
+        areas
+    - word: spider
+      hint: a small creature with eight legs
+    - word: monkey
+      hint: an animal with a long tail, that climbs trees and lives in hot areas
+    - word: elephant
+      hint: it has a long nose called a trunk
+    - word: cat
+      hint: a small animal related to lions
+    - word: cow
+      hint: kept on farms to produce milk and meat
+    - word: snake
+      hint: a reptile with a very long thin body with no legs
+    - word: crocodile
+      hint: a large reptile that has a long body, thick skin, and a long, thin mouth
+        with sharp teeths, that lives in the water
+    - word: octopus
+      hint: a sea creature with soft round body and eight long arms
+    - word: shark
+      hint: a large seafish with very sharp teeth and a pointed fin on its back
+    - word: chicken
+      hint: kept for its eggs and meat
+    - word: sheep
+      hint: an animal with thick coat, kept on farms for its meat
+    - word: giraffe
+      hint: a mammal with a very long neck, long legs
+    - word: dog
+      hint: a fury animal with four legs, a pointed nose and a tail
+    - word: lion
+      hint: a large powerfull animal of the cat family that hunts in group
+  - levelCatagory: 2
+    timeDuration: 50
+    levelQuizWords:
+    - word: rice
+      hint: the seed of this grass, which is a very important food
+    - word: sandwich
+      hint: slices of food with other foods between them such as meat, cheese
+    - word: bread
+      hint: a food made by baking a dough of flour or meal
+    - word: pasta
+      hint: a food made from flour, eggs, and water and dried in various forms, such
+        as macaroni or spaghetti
+    - word: grape
+      hint: a small juicy fruit, with a smooth skin that is either green, red, or
+        purple
+    - word: breakfast
+      hint: the first meal of the day
+    - word: milk
+      hint: this liquid is produced by cows or female goat and collected for people
+        to drink
+    - word: soup
+      hint: a liquid food made with small pieces of vegetables, meat, fish, or grain
+        cooked in water or broth
+    - word: cheese
+      hint: a food made by pressing together a mass of soft, thick soured milk solids
+    - word: watermelon
+      hint: a large, round fruit with a green rind and sweet pulp that is red or
+        pink
+    - word: cake
+      hint: a sweet, baked food made of flour, eggs, sugar, and flavoring
+    - word: juice
+      hint: a liquid from fruits is used for drinking
+    - word: pineapple
+      hint: a large, juicy fruit, shaped like egg, with sweet yellow flesh
+    - word: chocolate
+      hint: a candy or syrup made of ground cocoa with added sugar
+    - word: coffee
+      hint: a tropical plant that produce beans. these beans are used to make a dark
+        brown drink
+    - word: carrot
+      hint: a long orange root vegetable
+    - word: chicken
+      hint: a common farm bird, that is raised for its eggs and meat
+  - levelCatagory: 3
+    timeDuration: 50
+    levelQuizWords:
+    - word: foot
+      hint: the end part of the leg
+    - word: moustache
+      hint: hair grows on upper lip
+    - word: eye
+      hint: part that give sight to human or animals
+    - word: hand
+      hint: 'the part on the end of human arm '
+    - word: mouth
+      hint: part that is used for eat, breath or to produce sounds
+    - word: shoulder
+      hint: part of human body between the neck and the upper arm
+    - word: ear
+      hint: part for hearing
+    - word: back
+      hint: part that is on the opposite side to the chest and between neck and hips
+    - word: leg
+      hint: part that is used for walking or standing
+    - word: body
+      hint: main part that shows existance of any living thing
+    - word: hair
+      hint: a thin, thread like strand that grows from the skin of human and other
+        mammals
+    - word: beard
+      hint: the hair growing on man's face
+    - word: neck
+      hint: the part of body that connects the head with the body
+    - word: nose
+      hint: part used for breathing or smelling
+    - word: face
+      hint: a front part of the head from the forehead to the chin and from ear to
+        ear
+    - word: arm
+      hint: part of human body between the shoulder and the wrist
+    - word: head
+      hint: top of the body that contains eyes, ears and mouth
+  - levelCatagory: 4
+    timeDuration: 50
+    levelQuizWords:
+    - word: pencil
+      hint: a long thin tool used for writing or drawing
+    - word: classroom
+      hint: room in school or college where classes are held
+    - word: exam
+      hint: a formal test to determine how much a person knows
+    - word: rubber
+      hint: used to erease writings or marks
+    - word: board
+      hint: usually colored white, used as a writing surface, in place such as classroom
+    - word: dictionary
+      hint: a book or source of information found on computer, that lists words in
+        alphabetical order
+    - word: teacher
+      hint: a person who teaches
+    - word: scissors
+      hint: a tool used for cutting
+    - word: bookcase
+      hint: a set of shelves for holding books
+    - word: desk
+      hint: a piece of furniture with drawers and a flat surface used for reading
+        and writing
+    - word: computer
+      hint: electronic device used to store information and work with data at high
+        speed
+    - word: homework
+      hint: school work that is to be done at home
+  - levelCatagory: 5
+    timeDuration: 50
+    levelQuizWords:
+    - word: bag
+      hint: a container made of clothes, leather, plastic or paper
+    - word: clothes
+      hint: things that you wear, such as trousers, dresses and jackets
+    - word: dress
+      hint: a piece of clothing for women that is made in one piece and covers the
+        body to the legs, knees or ankles
+    - word: glasses
+      hint: people wear this to see better
+    - word: handbag
+      hint: a small bag for money, keys etc
+    - word: hat
+      hint: a piece of clothing made to fit the head
+    - word: jacket
+      hint: a piece of clothing worn on the top half of the body over a shirt etc
+    - word: jeans
+      hint: trouser made of denim
+    - word: sweater
+      hint: a piece of clothing for the upper part of the body, made of whool or
+        cotton, with long sleeves
+    - word: belt
+      hint: a long narrow piece of leather, cloth etc. that you wear around the middle
+        part of your body
+    - word: shorts
+      hint: short trouser that end above or at the knee
+    - word: shoes
+      hint: one of a pair of objects that you wear on your feet
+    - word: sock
+      hint: piece of clothes worn over the feet, specially inside a shoe
+    - word: tshirt
+      hint: an informal shirt, usually with short sleeves
+  - levelCatagory: 6
+    timeDuration: 50
+    levelQuizWords:
+    - word: armchair
+      hint: a chair having supports at the sides for restings one's arms
+    - word: bathroom
+      hint: a room with a toilet and often a sink or bathtub
+    - word: bed
+      hint: a piece of furniture used for sleeping or resting
+    - word: bookcase
+      hint: a set of shelves for holding books
+    - word: computer
+      hint: electronic device used to store information and work with data at high
+        speed
+    - word: desk
+      hint: a piece of furniture with drawers and a flat surface used for reading
+        and writing
+    - word: hall
+      hint: a narrow passageway in a building
+    - word: kitchen
+      hint: a room where food is stored or cooked
+    - word: mat
+      hint: a piece of material that is used as a covering to protect the floor or
+        other surfaces
+    - word: mirror
+      hint: a smooth surface that reflects an image or whatever is in front of it
+    - word: sofa
+      hint: a long comfortable seat with arms and a back
+    - word: garden
+      hint: 'an area around one''s home planted with grass, flowers '
+    - word: basement
+      hint: the space in building that is underground or partly underground
+    - word: stairs
+      hint: a set of steps in or attached to a building that allow one to go from
+        one floor to others
+    - word: key
+      hint: object to open or close doors
+    - word: window
+      hint: an opening in a wall that lets in air and light and provides a view out
+    - word: balcony
+      hint: a platform with a low wall or railing that extends from the outside of
+        a building
+  - levelCatagory: 9
+    timeDuration: 50
+    levelQuizWords:
+    - word: tennis
+      hint: game that is played by a small ball
+    - word: golf
+      hint: a game in which a club is used to hit a small ball into a hole in the
+        ground
+    - word: cricket
+      hint: a bat-and-ball game played on a field at the centre of which is a 22-yard
+        pitch with a wicket at each end
+    - word: soccer
+      hint: a form of football played by two teams with a round ball which may not
+        be handled during play except by the goalkeepers
+    - word: hockey
+      hint: a team game played between two teams using hooked sticks with which the
+        players try to drive a small hard ball towards goals
+    - word: boxing
+      hint: a combat sport in which two people, usually wearing protective gloves,
+        throw punches at each other
+    - word: baseball
+      hint: a bat-and-ball game played between two opposing teams who take turns
+        batting and fielding
+    - word: Wrestling
+      hint: a combat sport involving grappling-type techniques such as clinch fighting,
+        throws and takedowns
+    - word: chess
+      hint: a board game played between two players
+    - word: bowling
+      hint: a target sport and recreational activity in which a player rolls a ball
+        toward pins or another target
+    - word: badminton
+      hint: a racquet sport played using racquets to hit a shuttlecock across a net
+    - word: cycling
+      hint: it is the use of bicycles for transport, recreation, exercise or sport
+    - word: snooker
+      hint: a cue sport that is played on a rectangular table covered with a green
+        cloth with 6 pockets
+    - word: skiing
+      hint: 'a transport using skis to glide on snow '
+    - word: handball
+      hint: is a team sport in which players pass a ball using their hands with the
+        aim of throwing it into the goal
+  - levelCatagory: 8
+    timeDuration: 50
+    levelQuizWords:
+    - word: hurt
+      hint: to cause pain, harm or suffering to
+    - word: nurse
+      hint: a person who is trained to care for sick and injered people
+    - word: disease
+      hint: a disorder of structure or function in a human, animal, or plant
+    - word: healthy
+      hint: it is a good physical or mental condition
+    - word: fat
+      hint: a natural oily substance occurring in animal bodies
+    - word: heart
+      hint: a muscle that pumps blood to all parts of your body
+    - word: doctor
+      hint: a person who is qualified to treat people who are ill
+    - word: hospital
+      hint: an institution providing medical and surgical treatment and nursing care
+        for sick or injured people
+    - word: workout
+      hint: a session of vigorous physical exercise or training
+    - word: jogging
+      hint: the activity of running at a steady, gentle pace as a form of physical
+        exercise
+    - word: yoga
+      hint: a group of physical, mental, and spiritual practices aim to control and
+        still the mind
+  sfxOn: 0
+  musicOn: 0
+  loadingScreenPopedUp: 0
