@@ -59,6 +59,7 @@ public class GameplayPopupsManager : MonoBehaviour
     private GameData gameData;
     private GameplayUIManager gameplayUiManager;
     private List<CatagoryItem> catagoryList;
+    private Level currentLevel;
 
     #endregion
 
@@ -103,7 +104,7 @@ public class GameplayPopupsManager : MonoBehaviour
             if (gameData.gameLevels[i].levelCatagory != Catagory.NONE)
             {
                 catagoryList.Add(new CatagoryItem(gameData.gameLevels[i].levelQuizWords.Count, Instantiate(catagoryUiPrefab,
-                catagoryListParent).GetComponent<RectTransform>(), gameData.gameLevels[i].levelCatagory, CatagorySelected));
+                catagoryListParent).GetComponent<RectTransform>(), gameData.gameLevels[i], CatagorySelected));
             }
         }
     }
@@ -117,6 +118,9 @@ public class GameplayPopupsManager : MonoBehaviour
         BG.SetActive(state);
         catagoryPopUpAnim.Animate(state);
         catagoryListParent.anchoredPosition = Vector2.zero;
+
+        foreach (CatagoryItem _item in catagoryList)
+            _item.DisplayStars();
     }
 
     public void PuasePopup(bool state)
@@ -145,10 +149,12 @@ public class GameplayPopupsManager : MonoBehaviour
         }
     }
 
-    public void CatagorySelected(int catIndex)
+    public void CatagorySelected(int _index, Level _level)
     {
         CatagorySelectionPopUp(false);
-        gameData.selectedCatagory = (Catagory)catIndex;
+
+        currentLevel = _level;
+        gameData.selectedCatagory = _level.levelCatagory;
         gameplayUiManager.InitializeLevelBasedOnSelectedCatagory();
         AudioController.Instance.PlayAudio(AudioName.UI_SFX);
         selectCatagoryScreen.SetActive(false);
@@ -167,6 +173,7 @@ public class GameplayPopupsManager : MonoBehaviour
         totalAnsweredText.text = _totalQuizes + "";
         totalScoresText.text = (_totalQuizes * 170) + "";
 
+        currentLevel.SetStars(5);
         levelWinPopUpAnim.Animate(true);
         continueToNextLevelButton.onClick.AddListener(MoveToHomeScreen);
     }
@@ -230,24 +237,40 @@ public class GameplayPopupsManager : MonoBehaviour
 
 public struct CatagoryItem
 {
-    public Catagory catagory;
+    public Level level;
     public RectTransform parent;
     public Button onClickBtn;
     public TMP_Text quizesText;
     public TMP_Text displayText;
+    public List<Image> stars;
 
-    public CatagoryItem(int _quizes, RectTransform _parent, Catagory _catagory, ButtonEvent _event)
+    public CatagoryItem(int _quizes, RectTransform _parent, Level _level, ButtonEvent _event)
     {
         parent = _parent;
-        catagory = _catagory;
+        level = _level;
 
         displayText = parent.GetChild(1).GetComponent<TMP_Text>();
         quizesText = parent.GetChild(2).GetComponent<TMP_Text>();
         onClickBtn = parent.GetChild(3).GetComponent<Button>();
 
         quizesText.text = _quizes + " / " + _quizes;
-        displayText.text = catagory.ToString().ToUpper();
-        onClickBtn.onClick.AddListener(delegate { _event((int)_catagory); });
+        displayText.text = level.levelCatagory.ToString().ToUpper();
+        onClickBtn.onClick.AddListener(() => _event(0, _level));
+
+        stars = new List<Image>();
+        foreach (RectTransform _starRect in parent.GetChild(4))
+            stars.Add(_starRect.GetComponent<Image>());
+    }
+
+    public void DisplayStars()
+    {
+        for (int i = 0; i < stars.Count; i++)
+        {
+            if (i < level.starsAwarded)
+                stars[i].color = Color.white;
+            else
+                stars[i].color = Color.black;
+        }
     }
 
 }

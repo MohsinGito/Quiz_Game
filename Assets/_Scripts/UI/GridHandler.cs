@@ -17,7 +17,7 @@ public class GridHandler : MonoBehaviour
     public GameObject gridElementPrefab;
     public List<GridRow> gridRows;
     public ZoomInOutPopUp gridAnim;
-    public delegate void ButtonEvent(int index);
+    public delegate void ButtonEvent(int index, Level _level);
 
     #endregion
 
@@ -127,7 +127,7 @@ public class GridHandler : MonoBehaviour
             alphabets.Add(((char)i).ToString());
     }
 
-    private void GridElementSelected(int _elementIndex)
+    private void GridElementSelected(int _elementIndex, Level _level)
     {
         if (gridElements[_elementIndex].IsSelected)
             return;

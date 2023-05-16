@@ -12,77 +12,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f319a129b9c1d4276825a5d481fcba08, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  testBuild: 1
+  myTemp:
+    temp: asdfgasdfgasdfa
+  reset: 1
   totalTries: 5
-  coinsEarned: 5000
+  coinsEarned: 4986
   rewardCoins: 2
   coinsForHint: 4
   coinsForTimeUp: 4
   coinsForTimeIncrement: 4
-  selectedCatagory: 3
+  selectedCatagory: 8
   gameLevels:
   - levelCatagory: 0
     timeDuration: 0
     levelQuizWords: []
+    starsAwarded: 0
   - levelCatagory: 1
     timeDuration: 50
     levelQuizWords:
-    - word: frog
-      hint: a small animal with smooth skin, that lives on both land and water
-    - word: bird
-      hint: animal with two wings and two legs
-    - word: hippo
-      hint: a very large, round mamal that has short legs with hooves and thick skin
-        with almost no hair.
-    - word: mouse
-      hint: a small animal that is covered with hair and has a long thin tail
-    - word: bat
-      hint: a small animal that flies at night
-    - word: kangaroo
-      hint: a large australian animal with a strong tail and back legs, that moves
-        by jumping
-    - word: parrot
-      hint: a tropical bird with brightly colored feathers
-    - word: rabbit
-      hint: a small animal with soft fur, long ears and a short tail
     - word: fish
       hint: an animal that lives in water, and has fins for swimming and gills for
         breathing
-    - word: duck
-      hint: a bird that lives in or near the water and has webbed feets for swimming
-        and a large flat bill
-    - word: goat
-      hint: an animal with horns and a coat of hair, that lives wild in the mountain
-        areas
+    - word: bat
+      hint: a small animal that flies at night
+    - word: chicken
+      hint: kept for its eggs and meat
+    - word: dog
+      hint: a fury animal with four legs, a pointed nose and a tail
+    - word: shark
+      hint: a large seafish with very sharp teeth and a pointed fin on its back
+    - word: crocodile
+      hint: a large reptile that has a long body, thick skin, and a long, thin mouth
+        with sharp teeths, that lives in the water
+    - word: cow
+      hint: kept on farms to produce milk and meat
+    - word: parrot
+      hint: a tropical bird with brightly colored feathers
+    - word: snake
+      hint: a reptile with a very long thin body with no legs
+    - word: giraffe
+      hint: a mammal with a very long neck, long legs
     - word: spider
       hint: a small creature with eight legs
-    - word: monkey
-      hint: an animal with a long tail, that climbs trees and lives in hot areas
     - word: elephant
       hint: it has a long nose called a trunk
     - word: cat
       hint: a small animal related to lions
-    - word: cow
-      hint: kept on farms to produce milk and meat
-    - word: snake
-      hint: a reptile with a very long thin body with no legs
-    - word: crocodile
-      hint: a large reptile that has a long body, thick skin, and a long, thin mouth
-        with sharp teeths, that lives in the water
+    - word: mouse
+      hint: a small animal that is covered with hair and has a long thin tail
+    - word: frog
+      hint: a small animal with smooth skin, that lives on both land and water
+    - word: duck
+      hint: a bird that lives in or near the water and has webbed feets for swimming
+        and a large flat bill
+    - word: rabbit
+      hint: a small animal with soft fur, long ears and a short tail
     - word: octopus
       hint: a sea creature with soft round body and eight long arms
-    - word: shark
-      hint: a large seafish with very sharp teeth and a pointed fin on its back
-    - word: chicken
-      hint: kept for its eggs and meat
+    - word: kangaroo
+      hint: a large australian animal with a strong tail and back legs, that moves
+        by jumping
     - word: sheep
       hint: an animal with thick coat, kept on farms for its meat
-    - word: giraffe
-      hint: a mammal with a very long neck, long legs
-    - word: dog
-      hint: a fury animal with four legs, a pointed nose and a tail
+    - word: bird
+      hint: animal with two wings and two legs
     - word: lion
       hint: a large powerfull animal of the cat family that hunts in group
+    - word: monkey
+      hint: an animal with a long tail, that climbs trees and lives in hot areas
+    - word: hippo
+      hint: a very large, round mamal that has short legs with hooves and thick skin
+        with almost no hair.
+    - word: goat
+      hint: an animal with horns and a coat of hair, that lives wild in the mountain
+        areas
+    starsAwarded: 0
   - levelCatagory: 2
     timeDuration: 50
     levelQuizWords:
@@ -126,6 +130,7 @@ MonoBehaviour:
       hint: a long orange root vegetable
     - word: chicken
       hint: a common farm bird, that is raised for its eggs and meat
+    starsAwarded: 0
   - levelCatagory: 3
     timeDuration: 50
     levelQuizWords:
@@ -165,6 +170,7 @@ MonoBehaviour:
       hint: part of human body between the shoulder and the wrist
     - word: head
       hint: top of the body that contains eyes, ears and mouth
+    starsAwarded: 0
   - levelCatagory: 4
     timeDuration: 50
     levelQuizWords:
@@ -195,40 +201,42 @@ MonoBehaviour:
         speed
     - word: homework
       hint: school work that is to be done at home
+    starsAwarded: 0
   - levelCatagory: 5
     timeDuration: 50
     levelQuizWords:
-    - word: bag
-      hint: a container made of clothes, leather, plastic or paper
-    - word: clothes
-      hint: things that you wear, such as trousers, dresses and jackets
-    - word: dress
-      hint: a piece of clothing for women that is made in one piece and covers the
-        body to the legs, knees or ankles
-    - word: glasses
-      hint: people wear this to see better
-    - word: handbag
-      hint: a small bag for money, keys etc
-    - word: hat
-      hint: a piece of clothing made to fit the head
-    - word: jacket
-      hint: a piece of clothing worn on the top half of the body over a shirt etc
-    - word: jeans
-      hint: trouser made of denim
-    - word: sweater
-      hint: a piece of clothing for the upper part of the body, made of whool or
-        cotton, with long sleeves
+    - word: sock
+      hint: piece of clothes worn over the feet, specially inside a shoe
     - word: belt
       hint: a long narrow piece of leather, cloth etc. that you wear around the middle
         part of your body
-    - word: shorts
-      hint: short trouser that end above or at the knee
-    - word: shoes
-      hint: one of a pair of objects that you wear on your feet
-    - word: sock
-      hint: piece of clothes worn over the feet, specially inside a shoe
     - word: tshirt
       hint: an informal shirt, usually with short sleeves
+    - word: glasses
+      hint: people wear this to see better
+    - word: hat
+      hint: a piece of clothing made to fit the head
+    - word: clothes
+      hint: things that you wear, such as trousers, dresses and jackets
+    - word: bag
+      hint: a container made of clothes, leather, plastic or paper
+    - word: sweater
+      hint: a piece of clothing for the upper part of the body, made of whool or
+        cotton, with long sleeves
+    - word: shorts
+      hint: short trouser that end above or at the knee
+    - word: dress
+      hint: a piece of clothing for women that is made in one piece and covers the
+        body to the legs, knees or ankles
+    - word: handbag
+      hint: a small bag for money, keys etc
+    - word: jacket
+      hint: a piece of clothing worn on the top half of the body over a shirt etc
+    - word: shoes
+      hint: one of a pair of objects that you wear on your feet
+    - word: jeans
+      hint: trouser made of denim
+    starsAwarded: 0
   - levelCatagory: 6
     timeDuration: 50
     levelQuizWords:
@@ -271,6 +279,7 @@ MonoBehaviour:
     - word: balcony
       hint: a platform with a low wall or railing that extends from the outside of
         a building
+    starsAwarded: 0
   - levelCatagory: 9
     timeDuration: 50
     levelQuizWords:
@@ -314,34 +323,36 @@ MonoBehaviour:
     - word: handball
       hint: is a team sport in which players pass a ball using their hands with the
         aim of throwing it into the goal
+    starsAwarded: 0
   - levelCatagory: 8
     timeDuration: 50
     levelQuizWords:
-    - word: hurt
-      hint: to cause pain, harm or suffering to
     - word: nurse
       hint: a person who is trained to care for sick and injered people
-    - word: disease
-      hint: a disorder of structure or function in a human, animal, or plant
-    - word: healthy
-      hint: it is a good physical or mental condition
     - word: fat
       hint: a natural oily substance occurring in animal bodies
+    - word: healthy
+      hint: it is a good physical or mental condition
+    - word: hurt
+      hint: to cause pain, harm or suffering to
     - word: heart
       hint: a muscle that pumps blood to all parts of your body
-    - word: doctor
-      hint: a person who is qualified to treat people who are ill
-    - word: hospital
-      hint: an institution providing medical and surgical treatment and nursing care
-        for sick or injured people
-    - word: workout
-      hint: a session of vigorous physical exercise or training
-    - word: jogging
-      hint: the activity of running at a steady, gentle pace as a form of physical
-        exercise
     - word: yoga
       hint: a group of physical, mental, and spiritual practices aim to control and
         still the mind
-  sfxOn: 0
-  musicOn: 0
+    - word: workout
+      hint: a session of vigorous physical exercise or training
+    - word: disease
+      hint: a disorder of structure or function in a human, animal, or plant
+    - word: hospital
+      hint: an institution providing medical and surgical treatment and nursing care
+        for sick or injured people
+    - word: doctor
+      hint: a person who is qualified to treat people who are ill
+    - word: jogging
+      hint: the activity of running at a steady, gentle pace as a form of physical
+        exercise
+    starsAwarded: 0
+  sfxOn: 1
+  musicOn: 1
   loadingScreenPopedUp: 0

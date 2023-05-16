@@ -5,6 +5,7 @@
         public enum AudioName
         {
             NONE,
+            MENU,
             BACKGROUND,
             SELECT,
             UI_SFX,

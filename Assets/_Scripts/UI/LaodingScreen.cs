@@ -25,7 +25,7 @@ public class LaodingScreen : Singleton<LaodingScreen>
     public void Init(UnityAction _actionOnClick, GameData _gameData)
     {
         LoadNewScene();
-        _gameData.loadingScreenPopedUp = true;
+        //_gameData.loadingScreenPopedUp = true;
 
         playButton.onClick.AddListener(
             _actionOnClick +

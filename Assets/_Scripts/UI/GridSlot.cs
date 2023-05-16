@@ -33,7 +33,7 @@ public class GridSlot
         if (onClickEvenet != null)
         {
             onClickButton = _parent.gameObject.AddComponent<Button>();
-            onClickButton.onClick.AddListener(delegate { onClickEvenet(_index); });
+            onClickButton.onClick.AddListener(delegate { onClickEvenet(_index, new Level()); });
             onClickButton.colors = GetDefaultColorBlock();
         }
         else

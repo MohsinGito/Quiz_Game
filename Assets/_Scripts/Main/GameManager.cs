@@ -18,11 +18,21 @@ public class GameManager : MonoBehaviour
 
     #region Main Methods
 
+    private void Awake()
+    {
+        if (gameData.reset)
+        {
+            foreach (Level level in gameData.gameLevels)
+                level.SetStars(0);
+        }
+    }
+
     private void Start()
     {
-        gameData.coinsEarned = gameData.testBuild ? 5000 : DataController.Instance.Coins;
+        AudioController.Instance.PlayAudio(AudioName.MENU);
+        gameData.loadingScreenPopedUp = PlayerPrefs.GetInt("IsLaoded") == 1 ? true: false ;
 
-        if(gameData.loadingScreenPopedUp)
+        if (gameData.loadingScreenPopedUp)
         {
             laodingScreen.gameObject.SetActive(false);
             gameplayUiManager.Init(gameData, gameplayPopupsManager);
@@ -33,6 +43,7 @@ public class GameManager : MonoBehaviour
         {
             DataController.Instance.Sfx = 1;
             DataController.Instance.Music = 1;
+            PlayerPrefs.SetInt("IsLaoded", 1);
 
             laodingScreen.Init(() =>
             {
@@ -48,4 +59,5 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+
 }

@@ -98,6 +98,7 @@ public class GameplayUIManager : MonoBehaviour
                 <RectTransform>(), displaySlotSize, displaySpriteSelected, displaySpriteDeselected));
             displayElements[i].frontText.text = string.Empty;
             displayElements[i].parent.localScale = Vector3.zero;
+            displayElements[i].parent.sizeDelta = displayElements[i].parent.sizeDelta / 1.5f;
 
             zoomElements.Add(new Zoom(0.1f, 0.05f, displayElements[i].parent));
         }

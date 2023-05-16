@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GameData", menuName = "SO/GameData")]
 public class GameData : ScriptableObject
 {
-    public bool testBuild;
+    public bool reset;
     public int totalTries;
     public int coinsEarned;
     public int rewardCoins;
@@ -27,15 +27,21 @@ public class GameData : ScriptableObject
 }
 
 [System.Serializable]
-public struct Level
+public class Level
 {
     public Catagory levelCatagory;
     public float timeDuration;
     public List<QuizWord> levelQuizWords;
+    public int starsAwarded;
+
+    public void SetStars(int _stars)
+    {
+        starsAwarded = _stars;
+    }
 }
 
 [System.Serializable]
-public struct QuizWord
+public class QuizWord
 {
     public string word;
     [TextArea(1, 3)]
